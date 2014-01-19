@@ -1,0 +1,47 @@
+#include "launch_pad_gen_conf.h"
+#include "windows.h"
+#include "winver.h"
+#define wxUSE_NO_MANIFEST 0
+#include "wx/msw/wx.rc"
+
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+IDR_MAINFRAME ICON DISCARDABLE "launch_pad_gen.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION D_LAUNCH_PAD_GEN_CNF_VERSION_C
+ PRODUCTVERSION D_LAUNCH_PAD_GEN_CNF_VERSION_C
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", D_LAUNCH_PAD_GEN_COMPANY_A " " D_LAUNCH_PAD_GEN_PROJECT_NAME "\0"
+            VALUE "CompanyName", D_LAUNCH_PAD_GEN_COMPANY_A "\0"
+            VALUE "FileDescription", D_LAUNCH_PAD_GEN_COMPANY_A " " D_LAUNCH_PAD_GEN_PROJECT_NAME "\0"
+            VALUE "FileVersion", D_LAUNCH_PAD_GEN_CNF_VERSION_B "\0"
+            VALUE "InternalName", "LaunchPadGen\0"
+            VALUE "LegalCopyright", "Copyright © " D_LAUNCH_PAD_GEN_COMPANY_B "\0"
+            VALUE "LegalTrademarks", "Copyright © " D_LAUNCH_PAD_GEN_COMPANY_B "\0"
+            VALUE "OriginalFilename", "LaunchPadGen.exe\0"
+            VALUE "PrivateBuild", D_LAUNCH_PAD_GEN_CNF_VERSION_B "\0"
+            VALUE "ProductName", D_LAUNCH_PAD_GEN_COMPANY_A " " D_LAUNCH_PAD_GEN_PROJECT_NAME "\0"
+            VALUE "ProductVersion", D_LAUNCH_PAD_GEN_CNF_VERSION_B "\0"
+            VALUE "SpecialBuild", D_LAUNCH_PAD_GEN_CNF_VERSION_B "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
