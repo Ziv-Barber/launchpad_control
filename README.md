@@ -8,7 +8,7 @@ Click [here](<http://www.youtube.com/watch?v=LOyNUGS4RC8>)
 
 ## Tools needed
 
-- Visual Studio 2013
+- Visual Studio 2013. The C++ code itself can be compiled also in Visual Studio 2010 but you need to convert yourself the project files.
 - wxWidgets pre-compiled to either 32 bits or 64 bits - download [here](<http://www.wxwidgets.org/>)
 - rtmidi library pre-compiled to either 32 bits or 64 bits - download [here](<http://www.music.mcgill.ca/~gary/rtmidi/>)
 
@@ -29,7 +29,8 @@ I'm sorry but this source package is not ready to compile out of the box and you
 
 ## Warnings
 
-- I didn't test it on 32 bits.
+- I didn't test the 32 bits configuration but it should work fine.
+- While I used wxWidgets 3.0.0, my wx code is compatible with any of the 2.9.x versions.
 - I have Launchpad S.
 - Please install the Launchpad USB drivers.
 - Since that it's a fast hack, then I didn't tests too much for MIDI errors.
